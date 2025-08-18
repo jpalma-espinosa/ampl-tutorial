@@ -1,8 +1,16 @@
 # Base de Jupyter Notebook con Python
 FROM jupyter/base-notebook:python-3.11.4
 
+
+# Cambiar a root para instalar paquetes
+USER root
+
 # Instala wget y unzip
 RUN apt-get update && apt-get install -y wget unzip
+
+
+# volver a usuario por defecto
+USER $NB_UID
 
 # Descarga AMPL Student Edition (Linux 64-bit)
 RUN wget https://ampl.com/dl/ampl.linux64.tgz -O /tmp/ampl.tgz && \
