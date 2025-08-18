@@ -11,11 +11,6 @@ RUN apt-get update && apt-get install -y wget unzip
 # volver a usuario por defecto
 USER $NB_UID
 
-# Descarga AMPL Student Edition (Linux 64-bit)
-RUN wget https://ampl.com/dl/ampl.linux64.tgz -O /tmp/ampl.tgz && \
-    tar -xvzf /tmp/ampl.tgz -C /opt && \
-    rm /tmp/ampl.tgz
-
 # Añade AMPL al PATH
 ENV PATH="/opt/ampl.linux64:${PATH}"
 
