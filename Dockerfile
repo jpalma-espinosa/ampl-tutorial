@@ -16,5 +16,5 @@ ENV PATH="/opt/ampl.linux64:${PATH}"
 
 # Instala ipython kernel para Jupyter
 RUN pip install --no-cache-dir ipykernel
-RUN python -m pip install amplpy # Install amplpy
+RUN python -m pip install -r requirements.txt
 RUN python -m amplpy.modules install highs gurobi  # Install modules
