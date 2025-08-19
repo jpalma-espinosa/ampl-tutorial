@@ -1,14 +1,18 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jpalma-espinosa/ampl-tutorial/HEAD?filepath=Basic-use.ipynb)
 
-# AMPL Binder Demo
 
-Este repositorio permite ejecutar AMPL directamente en la nube usando **Binder**, sin necesidad de instalar nada localmente.
 
-## Contenido
 
-- `Dockerfile` : define el entorno con AMPL Student Edition y Jupyter Notebook.
-- `notebook.ipynb` : notebook de ejemplo con un modelo de optimización simple.
-- `README.md` : instrucciones del repositorio.
+# Tutorial de AMPL usando Jupyter notebooks
+
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jpalma-espinosa/ampl-tutorial/HEAD?filepath=Basic-use.ipynb)
+
+## Archivos incluidos
+
+- `Basic-use.ipynb`: Notebook principal
+- `panaderia.mod`: Archivo de datos
+- `requirements.txt`: Dependencias de Python
 
 ## Cómo usarlo
 
@@ -16,22 +20,15 @@ Este repositorio permite ejecutar AMPL directamente en la nube usando **Binder**
 2. Ingresar el repositorio: `usuario/AMPL-Binder-demo`.
 3. Indicar el notebook a abrir: `notebook.ipynb`.
 4. Presionar **Launch**.
-5. Binder construirá el entorno y abrirá el notebook. ¡Ya puedes correr AMPL en la nube!
-
-## Ejemplo incluido
-
-El notebook ejecuta un modelo simple de AMPL:
-
-maximize 3x + 4y
-subject to
-x + 2y <= 14
-3x - y >= 0
-x - y <= 2
+5. Binder construirá el entorno y abrirá el notebook.
 
 
+## Uso local
 
+1. Clona el repositorio
+2. Instala dependencias: `pip install -r requirements.txt`
+3. Ejecuta: `jupyter notebook Basic-use.ipynb`
 
-Luego muestra los valores óptimos de `x`, `y` y la función objetivo.
 
 ---
 
