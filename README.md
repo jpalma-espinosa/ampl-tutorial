@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jpalma-espinosa/ampl-tutorial/HEAD?filepath=Basic-use.ipynb)
+
 # AMPL Binder Demo
 
 Este repositorio permite ejecutar AMPL directamente en la nube usando **Binder**, sin necesidad de instalar nada localmente.
