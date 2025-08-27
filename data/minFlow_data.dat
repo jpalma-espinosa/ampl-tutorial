@@ -1,0 +1,20 @@
+set NODES := S1 S2 S3 D1 D2 D3 ;
+set LINKS := (S1,D1) (S1,S2) (S1,S3)
+(S2,D1) (S2,D2)
+(S3,S2) (S3,D2)
+(D1,D3)
+(D2,D3);
+
+param supply default 0 := S1 100, S2 200, S3  50;
+param demand default 0 := D1 150, D2  80, D3 120;
+
+param: cost capacity :=
+S1 D1 1 100
+S1 S2 4 100
+S1 S3 3 100
+S2 D1 1 200
+S2 D2 2 200
+S3 S2 5  50
+S3 D2 6  50
+D1 D3 2 120
+D2 D3 4 120 ;

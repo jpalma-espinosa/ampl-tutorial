@@ -1,0 +1,10 @@
+set INTER := a b c d e f g ;
+param entr := a ;
+param out := g ;
+param: ROADS: cap :=
+a b 20, a d 15  
+b c 60, b d 5, b e 14
+c e 37, c g 13
+d e 17, d f 20, d g 8
+e g 60
+f g 10;
