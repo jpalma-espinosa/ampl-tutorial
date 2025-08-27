@@ -3,5 +3,4 @@ ampltools
 pandas
 numpy
 matplotlib
-amplpy
 seaborn
